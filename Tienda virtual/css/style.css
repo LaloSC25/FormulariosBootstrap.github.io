@@ -1,0 +1,22 @@
+        .form-container {
+            max-width: 600px;
+        }
+        .card-header-custom {
+            background-color: lab(49.3% 1.93 50.61); 
+            color: hsl(45, 82%, 28%); 
+            font-weight: bold;
+            border-bottom: none;
+        }
+        .btn-custom-yellow {
+            background-color: lch(88.19% 58.39 89.81); 
+            border-color: hsl(45, 100%, 71%);
+            color: hsl(45, 94%, 21%); 
+        }
+        .btn-custom-yellow:hover {
+            background-color: oklab(85.615% 0.00832 0.16916); 
+            border-color: hsl(45, 100%, 56%);
+            color: hsl(45, 94%, 21%);
+        }
+        .form-control, .form-select {
+            border-radius: .5rem; 
+        }

@@ -1,0 +1,12 @@
+        .form-container {
+            max-width: 600px;
+        }
+        .card-header-custom {
+            background-color: #198754; 
+            color: white;
+            font-weight: bold;
+            border-bottom: none;
+        }
+        .form-control, .form-select {
+            border-radius: .5rem; 
+        }

@@ -1,0 +1,15 @@
+
+        .form-container {
+            max-width: 650px;
+        }
+        .card-header-custom {
+            background-color: #0d6efd; 
+            color: white;
+            border-bottom: none;
+        }
+        .form-control, .form-select {
+            border-radius: .5rem; 
+        }
+        .form-control-file {
+            padding: 0.5rem;
+        }

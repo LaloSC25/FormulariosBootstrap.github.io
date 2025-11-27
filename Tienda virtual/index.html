@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+
+</head>
+
+<style>
+            .form-container {
+            max-width: 600px;
+        }
+        .card-header-custom {
+            background-color: #FFF3CD; 
+            color: #664D03; 
+            font-weight: bold;
+            border-bottom: none;
+        }
+        .btn-custom-yellow {
+            background-color: #FFDA6A;
+            border-color: #FFDA6A;
+            color: #664D03;
+        }
+        .btn-custom-yellow:hover {
+            background-color: #FFC720;
+            border-color: #FFC720;
+            color: #664D03;
+        }
+        .form-control, .form-select {
+            border-radius: .5rem; 
+        }
+</style>
+<body class="bg-light min-vh-100 d-flex align-items-center justify-content-center p-3">
+
+    <div class="card shadow-lg w-100 form-container border-0 rounded-4">
+       <div class="card-header card-header-custom rounded-top-4 py-3">
+            <h2 class="h5 text-center my-1">Detalles y Confirmación del Pedido</h2>
+        </div>
+        
+        <div class="card-body p-4 p-md-5">
+            <p class="text-muted text-center mb-4">Verifique los detalles de su compra y dirección de envío.</p>
+
+            <form>
+               <div class="row mb-4">
+                  <div class="col-md-8 mb-3 mb-md-0">
+                        <label for="product_select" class="form-label">Producto</label>
+                        <select id="product_select" name="product_select" required
+                            class="form-select">
+                            <option value="" disabled selected>Seleccione un artículo...</option>
+                            <option value="laptop">Laptop de Alto Rendimiento</option>
+                            <option value="monitor">Monitor 4K Curvo</option>
+                            <option value="teclado">Teclado Mecánico RGB</option>
+                            <option value="mouse">Mouse Inalámbrico Ergonómico</option>
+                        </select>
+                    </div>
+
+                   <div class="col-md-4">
+                        <label for="quantity" class="form-label">Cantidad</label>
+                        <input type="number" id="quantity" name="quantity" placeholder="1" value="1" min="1" required
+                            class="form-control">
+                    </div>
+                </div>
+
+               <div class="mb-4">
+                    <label for="shipping_address" class="form-label">Dirección de envío completa</label>
+                    <textarea id="shipping_address" name="shipping_address" rows="3" placeholder="Calle, número, colonia, código postal, ciudad, país..." required
+                        class="form-control"></textarea>
+                </div>
+
+               <div class="mb-4">
+                    <label class="form-label d-block">Método de pago</label>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment_method" id="payment_card" value="card" required checked>
+                        <label class="form-check-label" for="payment_card">
+                            Tarjeta de Crédito/Débito
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment_method" id="payment_transfer" value="transfer" required>
+                        <label class="form-check-label" for="payment_transfer">
+                            Transferencia Bancaria
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment_method" id="payment_cash" value="cash" required>
+                        <label class="form-check-label" for="payment_cash">
+                            Pago en Efectivo (Contra Entrega)
+                        </label>
+                    </div>
+                </div>
+
+                  <div>
+                    <button type="submit"
+                        class="btn btn-custom-yellow w-100 fw-semibold py-2 rounded-2 shadow-sm">
+                        Confirmar pedido
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
